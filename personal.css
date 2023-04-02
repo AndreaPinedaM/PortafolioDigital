@@ -109,6 +109,7 @@ h3, h2{
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
+        backdrop-filter: blur(1px);
     }
 
 
@@ -146,8 +147,8 @@ h3, h2{
 
 /*Experiencia profesional*/
 #proyectos{
-    background-color: black;
-    background-image: url("./IMG/P3LlKaDX6JZn.gif");
+    background-color: #4F0971;
+    background-image: url("./IMG/space.gif");
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -168,7 +169,9 @@ h3, h2{
 #proyectDescription{
     width: 80%;
     margin: 15px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
+    font-weight: 800;
+    color:cornflowerblue;
 }
 #botones{
     display: flex;

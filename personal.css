@@ -1,9 +1,9 @@
 *{
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
-    border: 1px white;
     margin: 0%;
     padding: 0%;
+    /* border: solid 1px red; */
 }
 button{
     color: white;
@@ -67,7 +67,6 @@ h3, h2{
     color: rgb(255, 255, 255);
     padding: 1rem; 
 }
-
 #welcome ul li{
     display: inline-block;
 }
@@ -92,25 +91,38 @@ h3, h2{
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #201D3A;
-    font-weight: 800;
+    font-weight: bolder;
     font-family: 'Lato', sans-serif;
-    font-size: 1rem;
+    font-size: 40px;
     color: #ecf0f1;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    }
-
-    #soft-skillsContainer{
-        width: 80%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        backdrop-filter: blur(1px);
-    }
+    padding: 5%;
+}
+#soft-skills h1{ margin-bottom: 35px;  }
+.scroller {
+    height: 0.8em;
+    line-height: 0.9em;
+    position: relative;
+    overflow: hidden;
+    width: 5em;
+    /* border-bottom: solid 5px #e2c910; */
+    /* border-bottom-style:double; */
+}
+#divider{
+    width: 6em;
+    height: 0.5em;
+}
+.scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin: auto;
+}
 
 
 /* Skills */
@@ -168,10 +180,12 @@ h3, h2{
 }
 #proyectDescription{
     width: 80%;
+    display: flex;
+    flex-direction: column;
     margin: 15px;
     backdrop-filter: blur(1px);
-    font-weight: 800;
-    color:cornflowerblue;
+    font-weight: 900;
+    color:rgb(54, 110, 213);
 }
 #botones{
     display: flex;
@@ -215,14 +229,6 @@ h3, h2{
 .gray{  
     background-color:#f5f5f5;  
     color: darkblue;
-}
-.darkblue{
-    background-color: #1B233A;
-    color: aliceblue;
-}
-.blue2{
-    background-color: #156597;
-    color: aliceblue;
 }
 
 .centrado{
@@ -314,3 +320,19 @@ button:hover{
     /* filter: invert(108%); */
     filter:  drop-shadow(0px 0px 3px rgb(33, 33, 217));    
 } 
+
+/* KEYFRAMES */
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -1.2em;
+    }
+    50% {
+        top: -2.4em;
+    }
+    75% {
+        top: -3.6em;
+    }
+}

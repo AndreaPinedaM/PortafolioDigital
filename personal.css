@@ -3,7 +3,6 @@
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0%;
     padding: 0%;
-    /* border: solid 1px red; */
 }
 button{
     color: white;
@@ -24,7 +23,7 @@ h3, h2{
 }
 /* Navbar */
 .head{
-    background-color: #156597;
+    background-color: #375A7F;
 }
 .head .navbar {
     background-color: transparent !important;
@@ -42,8 +41,8 @@ h3, h2{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url("./IMG/spaceship3.gif");
-    background-size: cover;
+    background-image: url("./IMG/zoom.gif");
+    background-size: contain;
     background-position: center;
     font-size: 19px;
 }
@@ -63,19 +62,58 @@ h3, h2{
 
 /*Sobre mí*/
 #about{
-    background-color: #156597;
+    background-image: url('./IMG/aboutme.png');
+    background-size: cover;
+    background-position: top;
+    background-position-y: 13%;
+    box-sizing:unset;
     color: rgb(255, 255, 255);
     padding: 1rem; 
+    display: flex;
+    flex-direction: column;
+}
+#textContainer{
+    width: 100%;
 }
 #welcome ul li{
     display: inline-block;
+}
+/* Skills */
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    color:aliceblue;
+    padding: 10px;
+    background-color: #1B233A;
+}
+marquee{
+    padding: 4%;
+}
+#skContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#coding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#hobSection{
+    display: flex;
+    flex-direction: column;
+    background-color:#1B233A;
+    color: white;
+    padding: 5%;
 }
 #hobbies{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #156597;
-    color: white;
 }
 .hob{
     padding: 10px;
@@ -85,6 +123,8 @@ h3, h2{
     display: flex;
     flex-direction: column;
 }
+
+/* SOFT SKILLS */
 #soft-skills{
     background-image: url("./IMG/spaceplanet.png");
     background-size: contain;
@@ -122,35 +162,25 @@ h3, h2{
     font-size: 40px;
     margin: auto;
 }
+/* Formación Academica */
+#academy{
+    background-image: url("./IMG/beforebang.gif");
+    background-position: center;
+    background-size: contain;
+    color:rgb(242, 242, 242);
+    font-weight: 500;
+    padding: 5%;
+}
+.glass-effect{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 25px;
+    padding: 15px;
+}
 
-
-/* Skills */
-.skills{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: #1B233A;
-    color:aliceblue;
-    padding: 10px;
-}
-#coding{
-    width: 70%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-.skill{
-    width: 200px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    margin: 10px;
-}
-.sk-logo{
-    width: 40px;
-    margin: 5px;
-}
 
 /*Contenido en colunmas*/
 #about, #experiencia,  #academy, #proyectos{
@@ -158,9 +188,17 @@ h3, h2{
 }
 
 /*Experiencia profesional*/
+#experiencia{
+    background-image: url("./IMG/spacechase_dribbble.gif");
+    color: #ffffff;
+}
+
 #proyectos{
-    background-image: url("./IMG/149h.gif");
+    background-image: url("./IMG/neonastro.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #080228;
     color: white;
 }
 .proyecto{
@@ -169,7 +207,7 @@ h3, h2{
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
-    margin: 1rem;
+    padding: 1rem;
 }
 .id-proyecto{
     display: flex;
@@ -220,20 +258,8 @@ h3, h2{
     border-radius: 200px;  
     width: 100%;
 }
-
 .logo{  width: 7vmax;  }
 
-.gray{  
-    background-color:#f5f5f5;  
-    color: darkblue;
-}
-.blue2{
-    background-color: #156597;
-    color: rgb(255, 255, 255);
-}
-.centrado{
-    text-align: center;
-}
 .flex{
     display: flex;
     position: relative;
@@ -336,3 +362,4 @@ button:hover{
         top: -3.6em;
     }
 }
+/* Shape Divider */

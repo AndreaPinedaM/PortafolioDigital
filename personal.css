@@ -21,6 +21,7 @@ h3, h2{
     padding: 10px; 
     margin-bottom: 0% !important;
 }
+
 /* Navbar */
 .head{
     background-color: #375A7F;
@@ -78,6 +79,7 @@ h3, h2{
 #welcome ul li{
     display: inline-block;
 }
+
 /* Skills */
 .skills{
     display: flex;
@@ -102,7 +104,6 @@ marquee{
     align-items: center;
     width: 100%;
 }
-
 #hobSection{
     display: flex;
     flex-direction: column;
@@ -162,6 +163,7 @@ marquee{
     font-size: 40px;
     margin: auto;
 }
+
 /* Formación Academica */
 #academy{
     background-image: url("./IMG/beforebang.gif");
@@ -228,6 +230,7 @@ marquee{
     flex-flow: wrap;
     justify-content: space-evenly;
 }
+
 /*Contacto*/
 #contacto{
     background-color: #201D3A;
@@ -274,18 +277,6 @@ marquee{
     flex-wrap: wrap;
     padding: 0.5rem;
 }
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
-    padding: 1rem;
-    margin: 0.5rem;
-    background-color: white;
-    backdrop-filter: blur(10px);
-    box-shadow: 2px 2px 5px #999;
-}
 
 /*Proyectos*/
 .img-proyecto{
@@ -298,15 +289,15 @@ marquee{
 }
 .repositorio{
     width: 45%;
-    border:solid 1px #2A7AE4;
+    border:solid 1px #201D3A;
     border-radius: 5px;
     background-color: #f5f5f5;
-    color:#2A7AE4;
+    color:#201D3A;
 }
 .ver-demo{
     width: 45%;
-    background-color: #2A7AE4;
-    border-color: #2A7AE4;
+    background-color: #201D3A;
+    border-color: #201D3A;
     border-radius: 5px;
     color:white;
 }

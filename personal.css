@@ -24,7 +24,7 @@ h3, h2{
 
 /* Navbar */
 .head{
-    background-color: #375A7F;
+    background-color: #201D3A;
 }
 .head .navbar {
     background-color: transparent !important;
@@ -98,6 +98,7 @@ marquee{
     justify-content: space-between;
     align-items: center;
 }
+#skContainer td{  margin: 30px;  }
 #coding{
     display: flex;
     justify-content: center;
@@ -173,15 +174,6 @@ marquee{
     font-weight: 500;
     padding: 5%;
 }
-.glass-effect{
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    -webkit-backdrop-filter: blur(18px);
-    backdrop-filter: blur(18px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 25px;
-    padding: 15px;
-}
 
 
 /*Contenido en colunmas*/
@@ -251,7 +243,6 @@ marquee{
 .social-icon:hover{
     scale: 1.5;
 }
-
 .social-icon a{
     text-decoration: none;
 }
@@ -267,7 +258,6 @@ marquee{
     display: flex;
     position: relative;
 }
-
 .cards{
     display: flex;
     flex-direction: row;
@@ -277,10 +267,21 @@ marquee{
     flex-wrap: wrap;
     padding: 0.5rem;
 }
+.glass-effect{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+}
 
 /*Proyectos*/
 .img-proyecto{
-    width: 50%;
+    width: 70%;
+    margin: 10px;
     display: inline-block;
 }
 .id-proyecto{
@@ -353,4 +354,4 @@ button:hover{
         top: -3.6em;
     }
 }
-/* Shape Divider */
+

@@ -22,16 +22,29 @@ h3, h2{
     margin-bottom: 0% !important;
 }
 
+
 /* Navbar */
 .head{
     background-color: #201D3A;
+    position: relative;
 }
 .head .navbar {
-    background-color: transparent !important;
+    width: 100vw;
     color: white !important;
+    position: fixed;
+    z-index: 2;
+    top: 0;
 }
 #navLogo{
     margin: 10px;
+}
+#progress-bar{
+    height: .5rem;
+    width: 0%;
+    position: fixed;
+    background-color: cadetblue;
+    margin-top: 5px;
+    z-index: 3;
 }
 
 /*first container*/
@@ -45,6 +58,7 @@ h3, h2{
     background-size: contain;
     background-position: center;
     font-size: 19px;
+    margin-top: 60px;
 }
 #welcome{
     font-weight: 800;
@@ -54,6 +68,7 @@ h3, h2{
     justify-content: center;
     color: rgb(255, 255, 255);
     backdrop-filter: blur(2px);
+    margin: 15px;
 }
 #main-img{
     width: 180px;

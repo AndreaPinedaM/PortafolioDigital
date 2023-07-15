@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link type="text/css" rel="stylesheet" href="personal.css">
+    <link type="text/css" rel="stylesheet" href="./Components/heartSwitch.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/c900b2aa5f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Pagina Personal</title>
 </head>
+
 <body>
     <header class="head">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <img id="navLogo" src="./IMG/astro.png" alt="astronaut" width="40">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <div id="navLogo"></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-light"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -50,402 +54,454 @@
         <div id="progress-bar"></div>
     </header>
 
-        <div id="first-container">
-            <div id="welcome">
-                <h2>¡Hola! soy Andrea Pineda y soy desarrolladora web</h2>
-                <p>A continuacion te presento información sobre mi trayectoria académica y proyectos que he desarrollado 
-                    en programas impartidos por Innovación, Oracle, Dev.f o proyectos personales.
-                    Estoy en constante aprendizaje y actualización para mejorar mis habilidades informáticas en general, 
-                    ya que me gustaría incursionar en el mundo de la ciberseguridad.
-                </p>
-            </div>
-            <div id="main-img">
-                <img class="img_redonda" src="./IMG/IMG_20190109_143453_490.jpg">
-            </div>
-        </div>
-
-        <div id="about">
-            <div id="textContainer">
-                <h2>Sobre mi</h2>
-                <p>Tengo una sólida formación en tecnología y desarrollo de software, 
-                    con una variedad de certificaciones y cursos avanzados que respaldan mis habilidades. 
-                    Poseo la certificación AZ-900 y SC-900 en tecnología de la nube y seguridad, 
-                    así como un título de Master en Coding por Dev.f.</p>
-
-                <p>Además, he completado exitosamente cursos enfocados al desarrollo, seguridad, 
-                    cumplimiento y despliegue de aplicaciones de páginas web, entre estos cursos se encuentra: 
-                    Operación Aleph, LaunchX, y el Curso especializado de Azure, todos impartidos por Innovación Virtual. 
-                    Estos cursos me han brindado una comprensión profunda de los principios fundamentales 
-                    y las técnicas avanzadas para el desarrollo de software de alta calidad. Todo lo anterior 
-                    apoyado de mi carrera en Ingeniería Informática que me encuentro cursando actualmente.</p>
-                
-                <p>En resumen, como profesional del desarrollo de software, 
-                    tengo una amplia gama de habilidades y conocimientos en tecnología, 
-                    así como experiencia práctica en la aplicación de estas habilidades. 
-                    Estoy comprometida en seguir actualizándome y adquiriendo nuevas habilidades para proporcionar 
-                    resultados de alta calidad en cualquier proyecto que me involucre.</p>
+    <div id="first-container">
+        <div id="welcome">
+            <h2>¡Hola! soy Andrea Pineda y soy desarrolladora web</h2>
+            <p>A continuacion te presento información sobre mi trayectoria académica y proyectos que he desarrollado
+                en programas impartidos por Innovación, Oracle, Dev.f o proyectos personales.
+                Estoy en constante aprendizaje y actualización para mejorar mis habilidades informáticas en general,
+                ya que me gustaría incursionar en el mundo de la ciberseguridad.
+            </p>
+            <div class="heartCheckbox">
+                <p>Valentine's mode: </p>
+                <label class="heart-switch">
+                    <input type="checkbox" id="heart">
+                    <svg viewBox="0 0 33 23" fill="white">
+                        <path
+                            d="M23.5,0.5 C28.4705627,0.5 32.5,4.52943725 32.5,9.5 C32.5,16.9484448 21.46672,22.5 16.5,22.5 C11.53328,22.5 0.5,16.9484448 0.5,9.5 C0.5,4.52952206 4.52943725,0.5 9.5,0.5 C12.3277083,0.5 14.8508336,1.80407476 16.5007741,3.84362242 C18.1491664,1.80407476 20.6722917,0.5 23.5,0.5 Z">
+                        </path>
+                    </svg>
+                </label>
             </div>
         </div>
-
-        <div class="skills">
-            <h2>Skills:</h2>
-                <div id="coding">
-                    <marquee behavior="scroll">
-                        <table width="100">
-                        <tr id="skContainer">
-                            <td>                            
-                                <img src="./IMG/html.png" width="50">
-                            </td>
-                            <td>
-                                <img src="./IMG/css.png" width="50">
-                            </td>
-                            <td>
-                                <img src="./IMG/javascript.png" width="65">
-                            </td>
-                            <td>
-                                <img src="./IMG/JQuery-Logo.png" width="65">
-                            </td>
-                            <td>
-                                <img src="./IMG/bootstrap-logo.png" width="85">
-                            </td>
-                            <td>
-                                <img src="./IMG/mui.png" width="65">
-                            </td>
-                            <td>
-                                <img src="./IMG/Python_logo.png" width="60">
-                            </td>
-                            <td>
-                                <img src="./IMG/c++.png" width="50">
-                            </td>
-                            <td>
-                                <img src="./IMG/Redux.png" width="80">
-                            </td>
-                            <td>
-                                <img src="./IMG/npm.png" width="65">
-                            </td>
-                            <td>
-                                <img src="./IMG/node.png" width="65">
-                            </td>
-                            <td>
-                                <img src="./IMG/react.png" width="65">
-                            </td>
-                            <td>
-                                <img src="./IMG/vite.png" width="65">
-                            </td>
-                            <td>
-                                <img src="./IMG/jwt-logo.png" width="85">
-                            </td>
-                        </tr>
-                        </table>
-                    </marquee>
-                </div>
+        <div id="main-img">
+            <div class="img_redonda"></div>
         </div>
+    </div>
 
-        <div class="fist">
-            <div>
-                <h3>Mis inicios en programación</h3>
+    <div id="about">
+        <div id="textContainer">
+            <h2>Sobre mi</h2>
+            <p>Tengo una sólida formación en tecnología y desarrollo de software,
+                con una variedad de certificaciones y cursos avanzados que respaldan mis habilidades.
+                Poseo la certificación AZ-900 y SC-900 en tecnología de la nube y seguridad,
+                así como un título de Master en Coding por Dev.f.</p>
+
+            <p>Además, he completado exitosamente cursos enfocados al desarrollo, seguridad,
+                cumplimiento y despliegue de aplicaciones de páginas web, entre estos cursos se encuentra:
+                Operación Aleph, LaunchX, y el Curso especializado de Azure, todos impartidos por Innovación Virtual.
+                Estos cursos me han brindado una comprensión profunda de los principios fundamentales
+                y las técnicas avanzadas para el desarrollo de software de alta calidad. Todo lo anterior
+                apoyado de mi carrera en Ingeniería Informática que me encuentro cursando actualmente.</p>
+
+            <p>En resumen, como profesional del desarrollo de software,
+                tengo una amplia gama de habilidades y conocimientos en tecnología,
+                así como experiencia práctica en la aplicación de estas habilidades.
+                Estoy comprometida en seguir actualizándome y adquiriendo nuevas habilidades para proporcionar
+                resultados de alta calidad en cualquier proyecto que me involucre.</p>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h2>Skills:</h2>
+        <div id="coding">
+            <marquee behavior="scroll">
+                <table width="100">
+                    <tr id="skContainer">
+                        <td>
+                            <img src="./IMG/html.png" width="50">
+                        </td>
+                        <td>
+                            <img src="./IMG/css.png" width="50">
+                        </td>
+                        <td>
+                            <img src="./IMG/javascript.png" width="65">
+                        </td>
+                        <td>
+                            <img src="./IMG/JQuery-Logo.png" width="65">
+                        </td>
+                        <td>
+                            <img src="./IMG/bootstrap-logo.png" width="85">
+                        </td>
+                        <td>
+                            <img src="./IMG/mui.png" width="65">
+                        </td>
+                        <td>
+                            <img src="./IMG/Python_logo.png" width="60">
+                        </td>
+                        <td>
+                            <img src="./IMG/c++.png" width="50">
+                        </td>
+                        <td>
+                            <img src="./IMG/Redux.png" width="80">
+                        </td>
+                        <td>
+                            <img src="./IMG/npm.png" width="65">
+                        </td>
+                        <td>
+                            <img src="./IMG/node.png" width="65">
+                        </td>
+                        <td>
+                            <img src="./IMG/react.png" width="65">
+                        </td>
+                        <td>
+                            <img src="./IMG/vite.png" width="65">
+                        </td>
+                        <td>
+                            <img src="./IMG/jwt-logo.png" width="85">
+                        </td>
+                    </tr>
+                </table>
+            </marquee>
+        </div>
+    </div>
+
+    <div class="fist">
+        <div>
+            <h3>Mis inicios en programación</h3>
+        </div>
+        <div id="code" class="cards">
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/pseint.png"><br>PSeInt
             </div>
-            <div class="cards">
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/pseint.png"><br>PSeInt
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/visual.png"><br>Visual Studio Code
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/matlab.png"><br>Matlab
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/scratch.png"><br>Scratch
-                </div>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/visual.png"><br>Visual Studio Code
+            </div>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/matlab.png"><br>Matlab
+            </div>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/scratch.png"><br>Scratch
             </div>
         </div>
+    </div>
 
-        <div id="hobSection">
-            <div>
-                <h3>Hobbies</h3>
-            </div>
-            <div id="hobbies">
-                <div class="hob">
-                    <span">
+    <div id="hobSection">
+        <div>
+            <h3>Hobbies</h3>
+        </div>
+        <div id="hobbies">
+            <div class="hob">
+                <span">
                     <img src="./IMG/controlador.png" alt="coding" width="40">
                     </span>
                     <p>Videogames</p>
-                </div>
-                <div class="hob">
-                    <span>
-                        <img src="./IMG/camara-de-video.png" alt="coding" width="35">
-                    </span>
-                    <p>Series & Movies</p>
-                </div>
-                <div class="hob">
-                    <span>
-                        <img src="./IMG/lista-de-reproduccion.png" alt="coding" width="45">
-                    </span>
-                    <p>Music</p>
-                </div>
-                <div class="hob">
-                    <span>
-                        <img src="./IMG/camara.png" alt="coding" width="40">
-                    </span>
-                    <p>Photography</p>
-                </div>
-                <div class="hob">
-                    <span>
-                        <img src="./IMG/codificacion.png" alt="coding" width="40">
-                    </span>
-                    <p>Coding</p>
-                </div>
+            </div>
+            <div class="hob">
+                <span>
+                    <img src="./IMG/camara-de-video.png" alt="coding" width="35">
+                </span>
+                <p>Series & Movies</p>
+            </div>
+            <div class="hob">
+                <span>
+                    <img src="./IMG/lista-de-reproduccion.png" alt="coding" width="45">
+                </span>
+                <p>Music</p>
+            </div>
+            <div class="hob">
+                <span>
+                    <img src="./IMG/camara.png" alt="coding" width="40">
+                </span>
+                <p>Photography</p>
+            </div>
+            <div class="hob">
+                <span>
+                    <img src="./IMG/codificacion.png" alt="coding" width="40">
+                </span>
+                <p>Coding</p>
             </div>
         </div>
+    </div>
 
-        <div id="soft-skills">
-            <p>Soft-Skills</p>
-            <p>Soy una persona enfocada en</p>
-            <div class="scroller">
-                <span>
-                    Adaptabilidad<br/>
-                    Flexibilidad<br/>
-                    Proactividad<br/>
-                    <!-- Resolución de problemas<br/>
+    <div id="event">
+        <h2>Eventos de la comunidad</h2>
+        <div class="body">
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <main id="carousel">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <main>
+        </div>
+    </div>
+
+    <div id="soft-skills">
+        <p>Soft-Skills</p>
+        <p>Soy una persona enfocada en</p>
+        <div class="scroller">
+            <span>
+                Adaptabilidad<br />
+                Flexibilidad<br />
+                Proactividad<br />
+                <!-- Resolución de problemas<br/>
                     Atención a los detalles<br/> -->
-                    Autodidacta<br/>
-                </span>
+                Autodidacta<br />
+            </span>
+        </div>
+        <img src="./IMG/divider.gif" id="divider">
+        <div class="scroller">
+            <span>
+                Compromiso<br />
+                Determinación<br />
+                Integridad<br />
+                Tenacidad<br />
+            </span>
+        </div>
+    </div>
+
+    <div id="academy">
+        <h2>Formación académica</h2>
+        <p>Mi Educación basica la cursé en la Escuela Secundaria Anexa
+            a la Normal Superior de México (ESANS).</p>
+        <p>Estudié la mayor parte de mi bachillerato en el CECyT 9 del IPN "Juan de Dios Bátiz", en la carrera técnica
+            de Sistemas Digitales.</p>
+        <p>Tengo el título de técnica en Infórmatica por parte del colegio de Bachilleres.</p>
+        <p>Me encuentro estudiando Ingeniería Informática en UPIICSA.</p>
+        <div class="cards">
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/escudo_anexa.png">
             </div>
-            <img src="./IMG/divider.gif" id="divider">
-            <div class="scroller">
-                <span>
-                    Compromiso<br/>
-                    Determinación<br/>
-                    Integridad<br/>
-                    Tenacidad<br/>
-                </span>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/escudoCECyT9.png">
+            </div>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/Logo_Colegio_de_Bachilleres.png">
+            </div>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/Escudo_UPIICSA.png">
             </div>
         </div>
 
-        <div id="academy">
-            <h2>Formación académica</h2>
-            <p>Mi Educación basica la cursé en la Escuela Secundaria Anexa 
-                a la Normal Superior de México (ESANS).</p>
-            <p>Estudié la mayor parte de mi bachillerato en el CECyT 9 del IPN "Juan de Dios Bátiz", en la carrera técnica de Sistemas Digitales.</p>
-            <p>Tengo el título de técnica en Infórmatica por parte del colegio de Bachilleres.</p>
-            <p>Me encuentro estudiando Ingeniería Informática en UPIICSA.</p>
-            <div class="cards">
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/escudo_anexa.png">
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/escudoCECyT9.png">
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/Logo_Colegio_de_Bachilleres.png">
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/Escudo_UPIICSA.png">
-                </div>
+        <h3>Cursos</h3>
+        <p>Simultaneamente tomo cursos y/o diplomados extracurriculares con Oracle, Microsoft, Dev.f y Cisco.</p>
+        <div class="cards">
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/Oracle_logo.svg.png"><br>
+                <img class="logo" src="./IMG/alura.avif">
             </div>
-
-            <h3>Cursos</h3>
-            <p>Simultaneamente tomo cursos y/o diplomados extracurriculares con Oracle, Microsoft, Dev.f y Cisco.</p>
-            <div class="cards">
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/Oracle_logo.svg.png"><br>
-                    <img class="logo" src="./IMG/alura.avif">
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/devf.png">
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/innovacion-virtual.png">
-                </div>
-                <div class="glass-effect">
-                    <img class="logo" src="./IMG/cisco-logo-black-transparent.png">
-                </div>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/devf.png">
+            </div>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/innovacion-virtual.png">
+            </div>
+            <div class="glass-effect">
+                <img class="logo" src="./IMG/cisco-logo-black-transparent.png">
             </div>
         </div>
+    </div>
 
-        <div id="proyectos" class="flex">
-            <div id="proyectDescription">
-                <h2 class="centrado">Proyectos</h2>
-                He participado en las siguientes certificaciones y cursos impartidos por Microsoft:
-                <ul>
-                    <li>
-                        Ciclo Especializado, programa de Inovacción del cual obtuve la cerftificación AZ-900
-                        sobre el uso de Azure. 
-                    </li>
-                    <li>Curso para Fullstack Developer llamado LaunchX, en el que desarrolle proyectos como:
-                        <ul>
-                            <li>Pokedex</li>
-                            <li>Clon de página para agendar vacunación</li>
-                            <li>Página para una pastelería</li>
-                        </ul>
-                    </li>
-                    <li>Programa Aleph en donde tuve la oportunidad de obtener la certificación SC-900
-                        enfocada en la seguridad, cumplimiento e identidad de Microsoft.
-                    </li>
-                </ul>
-                <p>Simultaneamente desarrollo proyectos como parte de las prácticas del Master en Coding de Dev.f.</p>
-                <br>
-            </div>
+    <div id="proyectos" class="flex">
+        <div id="proyectDescription">
+            <h2 class="centrado">Proyectos</h2>
+            He participado en las siguientes certificaciones y cursos impartidos por Microsoft:
+            <ul>
+                <li>
+                    Ciclo Especializado, programa de Inovacción del cual obtuve la cerftificación AZ-900
+                    sobre el uso de Azure.
+                </li>
+                <li>Curso para Fullstack Developer llamado LaunchX, en el que desarrolle proyectos como:
+                    <ul>
+                        <li>Pokedex</li>
+                        <li>Clon de página para agendar vacunación</li>
+                        <li>Página para una pastelería</li>
+                    </ul>
+                </li>
+                <li>Programa Aleph en donde tuve la oportunidad de obtener la certificación SC-900
+                    enfocada en la seguridad, cumplimiento e identidad de Microsoft.
+                </li>
+            </ul>
+            <p>Simultaneamente desarrollo proyectos como parte de las prácticas del Master en Coding de Dev.f.</p>
+            <br>
         </div>
-        <div>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="Proyectos/banco.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Web Site Banco</h5>
-                                <p>Desarrollado como proyecto del Modulo 2 del Master en coding de Dev.f.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Proyectos/vacunas.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Diseño página vacunación</h5>
-                                <p>Desarrollado en el programa de Innovacción de formación para Developers.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Proyectos/youtube.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Clon Youtube</h5>
-                                <p>Desarrollado como proyecto del Modulo 1 del Master en Coding de Dev.f.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Proyectos/google.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Clon Google</h5>
-                                <p>Desarrollado como ejercicio del Modulo 1 del Master en Coding de Dev.f.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Proyectos/pokedex.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Pokedex</h5>
-                                <p>Desarrollado en el programa de Innovaccion de formación para Developers (consulta API).</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div> 
-        </div>
-
-        <h2>Insignias, diplomados y certificaciones</h2>
-        <div id="insignias" class="cards">
-            <div class="glass-effect">
-                <img class="logo" src="./IMG/az-900.png"><br><a href="https://www.credly.com/badges/b0839c63-9507-45aa-9af1-9272d58bb15a?source=linked_in_profile">AZ-900</a>
+    </div>
+    <div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
             </div>
-            <div class="glass-effect">
-                <img class="logo" src="./IMG/alura-challenge1.png"><br>Oracle: Decodificador
-            </div>
-            <div class="glass-effect">
-                <img class="logo" src="./IMG/Challenge 2  Hangman Game.png"><br>Oracle: Hangman
-            </div>
-            <div class="glass-effect">
-                <img class="logo" src="./IMG/Programming-hub.webp"><br><a href="./IMG/Andrea Pineda_JQuery-Exc.pdf">Programming Hub jQuery </a>
-            </div> 
-            <div class="glass-effect">
-                <img class="logo" src="./IMG/microsoft-certified-security-compliance-and-identity-fundamentals.png"><br><a href="https://www.credly.com/badges/27089528-fb76-4dfa-87da-f735779c614b/public_url">SC-900</a>
-            </div>
-        </div>
-
-        <div id="experiencia">
-            <h2>Experiencia profesional</h2>
-            <div class="proyecto">
-                <div class="img-proyecto">
-                    <img src="./IMG/encriptador.png" width="100%">
-                </div>
-                <div class="linkCard">
-                    <div class="glass-effect">
-                        <div>
-                            <h3>Encriptador de texto</h3>
-                            <p>Challenge Alura Codificador</p>
-                            <div id="botones">
-                                <button class="repositorio" onclick="location.href='https://github.com/AndreaPinedaM/Oracle_Alura/tree/main/Challenge%201'">Repositorio</button>
-                                <button class="ver-demo" onclick="location.href='https://andreapinedam.github.io/Oracle_Alura/Challenge%201/%E2%80%8Cindex.html'">Ver demo</button>
-                            </div>
-                        </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Proyectos/banco.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Web Site Banco</h5>
+                        <p>Desarrollado como proyecto del Modulo 2 del Master en coding de Dev.f.</p>
                     </div>
                 </div>
-            </div>  
 
-            <div class="proyecto">
-                <div class="img-proyecto">
-                    <img src="./IMG/pasteleria_1.png" width="100%">
-                    <img src="./IMG/pasteleria_2.png" width="100%">
+                <div class="carousel-item">
+                    <img src="Proyectos/vacunas.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Diseño página vacunación</h5>
+                        <p>Desarrollado en el programa de Innovacción de formación para Developers.</p>
+                    </div>
                 </div>
-                <div class="linkCard">
-                    <div class="glass-effect">
-                        <div>
-                            <h3>Página pastelería</h3>
-                            <p>Innovacion LaunchX 
-                                <span class="material-symbols-outlined">html</span>
-                            </p>
-                            <div id="botones">
-                                <button class="repositorio" onclick="location.href='https://github.com/AndreaPinedaM/Pasteleria'">Repositorio</button>
-                                <button class="ver-demo" onclick="location.href='https://andreapinedam.github.io/Pasteleria/'">Ver demo</button>
-                            </div>
+
+                <div class="carousel-item">
+                    <img src="Proyectos/youtube.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Clon Youtube</h5>
+                        <p>Desarrollado como proyecto del Modulo 1 del Master en Coding de Dev.f.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Proyectos/google.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Clon Google</h5>
+                        <p>Desarrollado como ejercicio del Modulo 1 del Master en Coding de Dev.f.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Proyectos/pokedex.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pokedex</h5>
+                        <p>Desarrollado en el programa de Innovaccion de formación para Developers (consulta API).</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h2>Insignias, diplomados y certificaciones</h2>
+    <div id="insignias" class="cards">
+        <div class="glass-effect">
+            <img class="logo" src="./IMG/az-900.png"><br><a
+                href="https://www.credly.com/badges/b0839c63-9507-45aa-9af1-9272d58bb15a?source=linked_in_profile">AZ-900</a>
+        </div>
+        <div class="glass-effect">
+            <img class="logo" src="./IMG/alura-challenge1.png"><br>Oracle: Decodificador
+        </div>
+        <div class="glass-effect">
+            <img class="logo" src="./IMG/Challenge 2  Hangman Game.png"><br>Oracle: Hangman
+        </div>
+        <div class="glass-effect">
+            <img class="logo" src="./IMG/Programming-hub.webp"><br><a
+                href="./IMG/Andrea Pineda_JQuery-Exc.pdf">Programming Hub jQuery </a>
+        </div>
+        <div class="glass-effect">
+            <img class="logo" src="./IMG/microsoft-certified-security-compliance-and-identity-fundamentals.png"><br><a
+                href="https://www.credly.com/badges/27089528-fb76-4dfa-87da-f735779c614b/public_url">SC-900</a>
+        </div>
+        <div class="glass-effect">
+            <img class="logo" src="./IMG/master.png"><br><a
+                href="./IMG/DEVF_ANDREA_PINEDA_MASTER_EN CODING (1).pdf">Master</a>
+        </div>
+    </div>
+
+    <h2>Experiencia profesional</h2>
+    <div id="experiencia">
+        <div class="proyecto">
+            <div class="img-proyecto">
+                <img src="./IMG/encriptador.png" width="100%">
+            </div>
+            <div class="linkCard">
+                <div class="glass-effect">
+                    <div>
+                        <h3>Encriptador de texto</h3>
+                        <p>Challenge Alura Codificador</p>
+                        <div id="botones">
+                            <button class="repositorio"
+                                onclick="location.href='https://github.com/AndreaPinedaM/Oracle_Alura/tree/main/Challenge%201'">Repositorio</button>
+                            <button class="ver-demo"
+                                onclick="location.href='https://andreapinedam.github.io/Oracle_Alura/Challenge%201/%E2%80%8Cindex.html'">Ver
+                                demo</button>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <div id="social-media">
-                <!-- <div class="social-icon"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div> -->
-                <div class="social-icon">
-                    <a href="https://github.com/AndreaPinedaM" target="_blank">
-                        <img src="./IMG/icons8-github-94.png" alt="Github" width="40">
-                    </a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://www.linkedin.com/in/andrea-p-39a8421a2" target="_blank">
-                        <img src="./IMG/icons8-linkedin-94.png" alt="LinkedIn" width="40">
-                    </a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://t.me/AnnMaverick" target="_blank">
-                        <img src="./IMG/icons8-telegram-94.png" alt="Telegram" width="40">
-                    </a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://www.reddit.com/u/AnnMaverick?utm_medium=android_app&utm_source=share" target="_blank">
-                        <img src="./IMG/icons8-reddit-94.png" alt="Reddit" width="40">
-                    </a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/AnnMaverick09?mibextid=ZbWKwL" target="_blank">
-                        <img src="./IMG/icons8-facebook-circled-94.png" alt="Facebook" width="40">
-                    </a>
+        <div class="proyecto">
+            <div class="img-proyecto">
+                <img src="./IMG/pasteleria_1.png" width="100%">
+                <img src="./IMG/pasteleria_2.png" width="100%">
+            </div>
+            <div class="linkCard">
+                <div class="glass-effect">
+                    <div>
+                        <h3>Página pastelería</h3>
+                        <p>Innovacion LaunchX
+                            <span class="material-symbols-outlined">html</span>
+                        </p>
+                        <div id="botones">
+                            <button class="repositorio"
+                                onclick="location.href='https://github.com/AndreaPinedaM/Pasteleria'">Repositorio</button>
+                            <button class="ver-demo"
+                                onclick="location.href='https://andreapinedam.github.io/Pasteleria/'">Ver demo</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div id="social-media">
+            <!-- <div class="social-icon"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div> -->
+            <div class="social-icon">
+                <a href="https://github.com/AndreaPinedaM" target="_blank">
+                    <img src="./IMG/icons8-github-94.png" alt="Github" width="40">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/andrea-p-39a8421a2" target="_blank">
+                    <img src="./IMG/icons8-linkedin-94.png" alt="LinkedIn" width="40">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://t.me/AnnMaverick" target="_blank">
+                    <img src="./IMG/icons8-telegram-94.png" alt="Telegram" width="40">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.reddit.com/u/AnnMaverick?utm_medium=android_app&utm_source=share" target="_blank">
+                    <img src="./IMG/icons8-reddit-94.png" alt="Reddit" width="40">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/AnnMaverick09?mibextid=ZbWKwL" target="_blank">
+                    <img src="./IMG/icons8-facebook-circled-94.png" alt="Facebook" width="40">
+                </a>
+            </div>
+        </div>
+    </section>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
-    <script src="./index.js"></script>
+<script src="./index.js"></script>
+
 </html>

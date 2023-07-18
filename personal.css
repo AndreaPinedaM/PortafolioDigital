@@ -30,6 +30,10 @@ h2 {
     margin-bottom: 0% !important;
 }
 
+#proyectos li::marker {
+    content: var(--list);
+}
+
 
 /* Navbar */
 .head {
@@ -71,10 +75,11 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     background-image: var(--bgDinamic);
+    background-color: #1E2330;
     background-size: contain;
     background-position: center;
     font-size: 19px;
-    margin-top: 60px;
+    margin-top: 75px;
 }
 
 #welcome {
@@ -85,13 +90,14 @@ h2 {
     justify-content: center;
     color: white;
     backdrop-filter: blur(2px);
+    background-color: rgba(41, 52, 86, 0.258);
+    border-radius: 15px;
     margin: 15px;
 }
 
 #main-img {
-    width: 220px;
-    height: 180px;
-    margin: 1.5rem;
+    width: 240px;
+    height: 240px;
     background-image: var(--ProfileImg);
     background-position: center;
     background-size: cover;
@@ -575,7 +581,7 @@ input:nth-of-type(5):checked~main#carousel {
 [data-theme="light"] {
     --bgNavLogo: url('./IMG/astro.png');
     --sectionBg: #1B233A;
-    --bgDinamic: url("./IMG/galaxy2.jpg");
+    --bgDinamic: url("./IMG/planetsAnimation.gif");
     --bgSoft: url("./IMG/spaceplanet.png");
     --bgCards: #FFFFFF;
     --bgAbout: url("./IMG/aboutme.png");
@@ -584,7 +590,7 @@ input:nth-of-type(5):checked~main#carousel {
     --ProfileImg: url("./IMG/ProfileBlue.jpg");
     --proyectColor: #1B233A;
     --progBar: cadetblue;
-
+    --list: '✨';
 }
 
 /* Estilos en modo oscuro */
@@ -601,4 +607,5 @@ input:nth-of-type(5):checked~main#carousel {
     --ProfileImg: url("./IMG/ProfilePink.jpg");
     --proyectColor: #FF8FA7;
     --progBar: rgb(187, 26, 26);
+    --list: '💗';
 }

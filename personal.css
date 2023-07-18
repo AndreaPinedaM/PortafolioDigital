@@ -187,7 +187,7 @@ marquee {
     background-image: var(--bgSoft);
     background-size: contain;
     background-position: center;
-    background-color: #1E2330;
+    background-color: #1B233A;
     font-weight: 900;
     font-family: 'Lato', sans-serif;
     font-size: 40px;
@@ -227,6 +227,7 @@ marquee {
 
 /* Formación Academica */
 #academy {
+    /* background-color: #1B233A; */
     background-image: var(--bgAcademy);
     background-position: center;
     background-size: contain;
@@ -302,7 +303,7 @@ marquee {
 
 /*Contacto*/
 #contacto {
-    background-color: #201D3A;
+    background-color: #1B233A;
     color: white;
 }
 
@@ -447,7 +448,9 @@ button:hover {
 /* CARRUSEL */
 .body {
     height: 600px;
-    background-color: #1C2F48;
+    background-image: var(--carouselImg);
+    background-size: contain;
+    background-color: var(--carouselColor);
     margin: 0;
     display: grid;
     grid-template-rows: 500px 100px;
@@ -582,12 +585,15 @@ input:nth-of-type(5):checked~main#carousel {
     --bgNavLogo: url('./IMG/astro.png');
     --sectionBg: #1B233A;
     --bgDinamic: url("./IMG/planetsAnimation.gif");
-    --bgSoft: url("./IMG/spaceplanet.png");
+    --bgSoft: url("./IMG/rocket_7.gif");
     --bgCards: #FFFFFF;
     --bgAbout: url("./IMG/aboutme.png");
-    --bgAcademy: url("./IMG/beforebang.gif");
+    --bgAcademy: url("./IMG/solarsistem.gif");
+    --bgProyects: url("./IMG/earth.gif");
     --bgXp: url("./IMG/spacechase_dribbble.gif");
     --ProfileImg: url("./IMG/ProfileBlue.jpg");
+    --carouselColor: #171C3D;
+    --carouselImg: url("./IMG/space.webp");
     --proyectColor: #1B233A;
     --progBar: cadetblue;
     --list: '✨';
@@ -601,10 +607,11 @@ input:nth-of-type(5):checked~main#carousel {
     --bgAcademy: url("./IMG/bluebackHearts.jpg");
     --bgCards: url("./IMG/fallingHearts.gif");
     --bgDinamic: url("./IMG/bluebackHearts.jpg");
-    --bgProyects: url("./IMG/3dHearts.jpeg");
     --bgSoft: url("./IMG/snakeHeart.gif");
+    --bgProyects: url("./IMG/bubbleHearts.gif");
     --bgXp: url("./IMG/bluebackHearts.jpg");
     --ProfileImg: url("./IMG/ProfilePink.jpg");
+    --carouselColor: #1A2E47;
     --proyectColor: #FF8FA7;
     --progBar: rgb(187, 26, 26);
     --list: '💗';

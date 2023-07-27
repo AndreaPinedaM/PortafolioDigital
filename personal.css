@@ -3,7 +3,6 @@
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0%;
     padding: 0%;
-    /* border: solid 1px; */
 }
 
 button {
@@ -34,6 +33,26 @@ h2 {
     content: var(--list);
 }
 
+
+/* Features  */
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+#gt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#gt p {
+    margin: 0%;
+    padding: 0%;
+    margin: 0 5px;
+}
 
 /* Navbar */
 .head {
@@ -236,8 +255,31 @@ marquee {
     padding: 5%;
 }
 
+/* Idiomas  */
+#Eng {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
 
-/*Contenido en colunmas*/
+#view>a {
+    text-decoration: none;
+    color: #6C757D;
+}
+
+#view>a:hover {
+    color: white;
+}
+
+.engCard {
+    margin: 0% !important;
+    padding: 0% !important;
+}
+
+
+/*Contenido en columnas*/
 #about,
 #experiencia,
 #academy,
@@ -470,7 +512,7 @@ main#carousel {
     overflow: hidden;
     transform-style: preserve-3d;
     perspective: 600px;
-    --items: 5;
+    --items: 6;
     --middle: 3;
     --position: 1;
     pointer-events: none;
@@ -500,7 +542,7 @@ div.item:nth-of-type(1) {
 div.item:nth-of-type(2) {
     --offset: 2;
     background-color: #ff70a6;
-    background-image: url('./IMG/eventos/3.jpeg');
+    background-image: url('./IMG/eventos/8.jpg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -526,6 +568,15 @@ div.item:nth-of-type(4) {
 
 div.item:nth-of-type(5) {
     --offset: 5;
+    background-color: #e9ff70;
+    background-image: url('./IMG/eventos/2.jpeg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div.item:nth-of-type(6) {
+    --offset: 6;
     background-color: #e9ff70;
     background-image: url('./IMG/eventos/2.jpeg');
     background-position: center;
@@ -578,6 +629,16 @@ input:nth-of-type(5):checked~main#carousel {
     --position: 5;
 }
 
+input:nth-of-type(6) {
+    grid-column: 7 / 8;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(6):checked~main#carousel {
+    --position: 6;
+}
+
+
 /* Valentine´s Mode */
 
 /* Estilos para el modo claro */
@@ -610,7 +671,7 @@ input:nth-of-type(5):checked~main#carousel {
     --bgSoft: url("./IMG/snakeHeart.gif");
     --bgProyects: url("./IMG/bubbleHearts.gif");
     --bgXp: url("./IMG/bluebackHearts.jpg");
-    --ProfileImg: url("./IMG/ProfilePink.jpg");
+    --ProfileImg: url("./IMG/profilePink.jpg");
     --carouselColor: #1A2E47;
     --proyectColor: #FF8FA7;
     --progBar: rgb(187, 26, 26);
